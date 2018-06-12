@@ -14,7 +14,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2013_ShouldReturnLastSundayOfJanuary()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            LastSundayOfEachMonth dateService = DateService();
             var year = 2013;
 
             //Act
@@ -30,7 +30,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2013_ShouldReturnLastSundayOfFebruary()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2013;
 
             //Act
@@ -46,7 +46,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2013_ShouldReturnLastSundayOfMarch()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2013;
 
             //Act
@@ -62,7 +62,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2013_ShouldReturnLastSundayOfApril()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2013;
 
             //Act
@@ -78,7 +78,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2013_ShouldReturnLastSundayOfMay()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2013;
 
             //Act
@@ -94,7 +94,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2013_ShouldReturnLastSundayOfJune()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2013;
 
             //Act
@@ -110,7 +110,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2013_ShouldReturnLastSundayOfJuly()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2013;
 
             //Act
@@ -126,7 +126,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2013_ShouldReturnLastSundayOfAugust()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2013;
 
             //Act
@@ -142,7 +142,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2013_ShouldReturnLastSundayOfSeptember()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2013;
 
             //Act
@@ -158,7 +158,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2013_ShouldReturnLastSundayOfOctober()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2013;
 
             //Act
@@ -174,7 +174,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2013_ShouldReturnLastSundayOfNovember()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2013;
 
             //Act
@@ -190,7 +190,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2013_ShouldReturnLastSundayOfDecember()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2013;
 
             //Act
@@ -206,7 +206,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2020_ShouldReturnLastSundayOfFebruary()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2020;
 
             //Act
@@ -222,7 +222,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2032_ShouldReturnLastSundayOfFebruary()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2032;
 
             //Act
@@ -238,7 +238,7 @@ namespace ClassLibrary1.tests
         public void GetLastSunday_GivenAYearOf2014_ShouldReturnLastSundayOfJanuary()
         {
             //Arrange
-            var dateService = new LastSundayOfEachMonth();
+            var dateService = DateService();
             var year = 2014;
 
             //Act
@@ -248,6 +248,10 @@ namespace ClassLibrary1.tests
             var expected = "2014-02-23";
 
             Assert.AreEqual(actual.ElementAt(1), expected);
+        }
+        public static LastSundayOfEachMonth DateService()
+        {
+            return new LastSundayOfEachMonth();
         }
     }
 }
